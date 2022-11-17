@@ -27,6 +27,7 @@ aws dynamodb create-table \
 
 ```sh
 aws dynamodb put-item \
+    --endpoint-url http://localhost:8000 \
     --table-name Music \
     --item \
         '{"Artist": {"S": "No One You Know"}, "SongTitle": {"S": "Call Me Today"}, "AlbumTitle": {"S": "Somewhat Famous"}}' \

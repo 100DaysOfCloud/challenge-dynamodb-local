@@ -5,6 +5,9 @@ tasks:
   - name: aws-cli
     env:
       AWS_CLI_AUTO_PROMPT: on-partial
+      AWS_ACCESS_KEY_ID: myaccesskey
+      AWS_SECRET_ACCESS_KEY: mysecretkey
+      AWS_DEFAULT_REGION: us-east-1
     init: |
       cd /workspace
       curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
