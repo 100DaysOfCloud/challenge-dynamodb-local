@@ -1,0 +1,1 @@
+# challenge-dynamodb-local
